@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3feaa8-ecac-40c7-bd4f-dac7149b1b3d" name="Changes" comment="Finish Reading 2.1 part">
+    <list default="true" id="2c3feaa8-ecac-40c7-bd4f-dac7149b1b3d" name="Changes" comment="Finish Reading 2.2 part">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +49,7 @@
       <recent name="Chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Chapter2.part2.behaviorParameterization">
+  <component name="RunManager" selected="Application.RealWorldExamples">
     <configuration name="Chapter2.part1.filterWithEveryAttr_thirdAttempt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Chapter2.part1.filterWithEveryAttr_thirdAttempt" />
       <module name="Modern Java In Action" />
@@ -63,25 +63,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Chapter2.part1.filteringGreenApples_firstAttempt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter2.part1.filteringGreenApples_firstAttempt" />
+    <configuration name="RealWorldExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter2.part3.RealWorldExamples" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter2.part1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Chapter2.part1.parameterizingTheColor_secondAttempt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter2.part1.parameterizingTheColor_secondAttempt" />
-      <module name="Modern Java In Action" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Chapter2.part1.*" />
+          <option name="PATTERN" value="Chapter2.part3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +89,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="chapter2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter2.chapter2" />
+    <configuration name="moreAbstraction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter2.part3.moreAbstraction" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter2.part1.*" />
+          <option name="PATTERN" value="Chapter2.part3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="usingAnonymousClassesAndLambda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter2.part3.usingAnonymousClassesAndLambda" />
+      <module name="Modern Java In Action" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Chapter2.part3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RealWorldExamples" />
+        <item itemvalue="Application.moreAbstraction" />
+        <item itemvalue="Application.usingAnonymousClassesAndLambda" />
         <item itemvalue="Application.Chapter2.part2.behaviorParameterization" />
         <item itemvalue="Application.Chapter2.part1.filterWithEveryAttr_thirdAttempt" />
-        <item itemvalue="Application.Chapter2.part1.parameterizingTheColor_secondAttempt" />
-        <item itemvalue="Application.Chapter2.part1.filteringGreenApples_firstAttempt" />
-        <item itemvalue="Application.Chapter2.chapter2" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657792610152</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finish Reading 2.2 part">
+      <created>1657794074859</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657794074859</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,6 +179,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Finish Reading 2.1 part" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish Reading 2.1 part" />
+    <MESSAGE value="Finish Reading 2.2 part" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish Reading 2.2 part" />
   </component>
 </project>
