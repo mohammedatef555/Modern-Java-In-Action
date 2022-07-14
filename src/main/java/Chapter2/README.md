@@ -1,4 +1,4 @@
-# Chapter2 -
+# Chapter2
 ## _Passing code with behavior parameterization_
 
 
