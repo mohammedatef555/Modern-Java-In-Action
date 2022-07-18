@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3feaa8-ecac-40c7-bd4f-dac7149b1b3d" name="Changes" comment="Finish Reading 2.2 part">
+    <list default="true" id="2c3feaa8-ecac-40c7-bd4f-dac7149b1b3d" name="Changes" comment="Finish Reading Chapter2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,34 +35,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RealWorldExamples">
-    <configuration name="Chapter2.part1.filterWithEveryAttr_thirdAttempt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter2.part1.filterWithEveryAttr_thirdAttempt" />
-      <module name="Modern Java In Action" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Chapter2.part1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.WhereToUseAndHowToUseLambda">
     <configuration name="RealWorldExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Chapter2.part3.RealWorldExamples" />
       <module name="Modern Java In Action" />
@@ -76,12 +63,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="behaviorParameterization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter2.part2.behaviorParameterization" />
+    <configuration name="WhereToUseAndHowToUseLambda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter3.WhereToUseAndHowToUseLambda" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter2.part2.*" />
+          <option name="PATTERN" value="chapter3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="chapter3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter3.chapter3" />
+      <module name="Modern Java In Action" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chapter3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WhereToUseAndHowToUseLambda" />
+        <item itemvalue="Application.chapter3" />
         <item itemvalue="Application.RealWorldExamples" />
         <item itemvalue="Application.moreAbstraction" />
         <item itemvalue="Application.usingAnonymousClassesAndLambda" />
-        <item itemvalue="Application.Chapter2.part2.behaviorParameterization" />
-        <item itemvalue="Application.Chapter2.part1.filterWithEveryAttr_thirdAttempt" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657794074859</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Finish Reading Chapter2">
+      <created>1657797066145</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657797066145</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,6 +187,7 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Finish Reading 2.1 part" />
     <MESSAGE value="Finish Reading 2.2 part" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish Reading 2.2 part" />
+    <MESSAGE value="Finish Reading Chapter2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish Reading Chapter2" />
   </component>
 </project>
