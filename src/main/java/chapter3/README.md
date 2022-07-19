@@ -19,13 +19,13 @@ A lambda expression is composed of parameters, an arrow, and a body.
 list of valid lambdas.
 ```java
 (String s) -> s.length()
-        (Apple a) -> a.getWeight() > 150
-        (int x, int y) -> {
+(Apple a) -> a.getWeight() > 150
+(int x, int y) -> {
         System.out.println("Result:");
         System.out.println(x + y);
         }
-        () -> 42
-        (Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight())     
+() -> 42
+(Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight())     
 ```
 
 ## Examples of lambdas
@@ -37,7 +37,7 @@ list of valid lambdas.
 |  Consuming from an object |  ```(Apple a) -> {System.out.println(a.getWeight());}``` |
 | Select/extract from an object  |  ```(String s) -> s.length()``` |
 | Combine two values  |  ```(int a, int b) -> a * b``` |
-|  Compare two objects |  ```(Apple a1, Apple a2) ->         a1.getWeight().compareTo(a2.getWeight())``` |
+|  Compare two objects |  ```(Apple a1, Apple a2) ->  a1.getWeight().compareTo(a2.getWeight())``` |
 
 # Where and how to use lambdas
 ## Where exactly can you use lambdas?
@@ -45,6 +45,15 @@ list of valid lambdas.
 
 # What is Functional interface?
 - A functional interface is an interface that specifies exactly one abstract method.
+- AKA Any interface with a SAM(Single Abstract Method) is a functional interface.
+
+```java
+// @FunctionalInterface isn’t mandatory, but it’s good practice to use it when an interface is designed for that purpose.
+@FunctionalInterface
+public interface Predicate<T> {
+    boolean test(T t);
+```
+
 
 # Function descriptor
 - The signature of the abstract method of the functional interface describes the signature of the lambda expression.
