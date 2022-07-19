@@ -1,4 +1,4 @@
-package chapter3;
+package chapter3.part1AndPart2;
 
 // a functional interface is an interface that specifies exactly one abstract method
 

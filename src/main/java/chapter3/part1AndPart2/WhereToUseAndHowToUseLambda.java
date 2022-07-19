@@ -1,4 +1,4 @@
-package chapter3;
+package chapter3.part1AndPart2;
 
 // You can use a lambda expression in the context of a functional interface
 public class WhereToUseAndHowToUseLambda {
