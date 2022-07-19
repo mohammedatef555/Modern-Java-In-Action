@@ -154,6 +154,6 @@ But this comes with a performance cost. Boxed values are a wrapper around primit
 
 
 
-[UsingPredicateInterface.java]:(./part4UsingFunctionalInterfaces/UsingPredicateInterface.java)
-[UsingConsumerInterface.java]:(./part4UsingFunctionalInterfaces/UsingConsumerInterface.java)
-[UsingFunctionInterface.java]:(./part4UsingFunctionalInterfaces/UsingFunctionInterface.java)
+[UsingPredicateInterface.java](./part4UsingFunctionalInterfaces/UsingPredicateInterface.java)
+[UsingConsumerInterface.java](./part4UsingFunctionalInterfaces/UsingConsumerInterface.java)
+[UsingFunctionInterface.java](./part4UsingFunctionalInterfaces/UsingFunctionInterface.java)
