@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3feaa8-ecac-40c7-bd4f-dac7149b1b3d" name="Changes" comment="Start Reading Chapter 3">
+    <list default="true" id="2c3feaa8-ecac-40c7-bd4f-dac7149b1b3d" name="Changes" comment="Finish Reading 3.3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chapter3/Adder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chapter3/part1AndPart2/Adder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chapter3/WhereToUseAndHowToUseLambda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chapter3/part1AndPart2/WhereToUseAndHowToUseLambda.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -51,7 +49,7 @@
       <recent name="Chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LambdasIntoPractice">
+  <component name="RunManager" selected="Application.UsingFunctionInterface">
     <configuration name="LambdasIntoPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="chapter3.part3.LambdasIntoPractice" />
       <module name="Modern Java In Action" />
@@ -65,12 +63,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RealWorldExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter2.part3.RealWorldExamples" />
+    <configuration name="UsingConsumerInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter3.part4UsingFunctionalInterfaces.UsingConsumerInterface" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter2.part3.*" />
+          <option name="PATTERN" value="chapter3.part4UsingFunctionalInterfaces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsingFunctionInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter3.part4UsingFunctionalInterfaces.UsingFunctionInterface" />
+      <module name="Modern Java In Action" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chapter3.part4UsingFunctionalInterfaces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsingPredicateInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter3.part4UsingFunctionalInterfaces.UsingPredicateInterface" />
+      <module name="Modern Java In Action" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chapter3.part4UsingFunctionalInterfaces.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,39 +115,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="chapter3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter3.chapter3" />
-      <module name="Modern Java In Action" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chapter3.part1AndPart2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="moreAbstraction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter2.part3.moreAbstraction" />
-      <module name="Modern Java In Action" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Chapter2.part3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UsingFunctionInterface" />
+        <item itemvalue="Application.UsingConsumerInterface" />
+        <item itemvalue="Application.UsingPredicateInterfaces" />
         <item itemvalue="Application.LambdasIntoPractice" />
         <item itemvalue="Application.chapter3.WhereToUseAndHowToUseLambda" />
-        <item itemvalue="Application.chapter3.chapter3" />
-        <item itemvalue="Application.RealWorldExamples" />
-        <item itemvalue="Application.moreAbstraction" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658140928983</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Finish Reading 3.3">
+      <created>1658220656675</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1658220656676</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,6 +203,7 @@
     <MESSAGE value="Finish Reading 2.2 part" />
     <MESSAGE value="Finish Reading Chapter2" />
     <MESSAGE value="Start Reading Chapter 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start Reading Chapter 3" />
+    <MESSAGE value="Finish Reading 3.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish Reading 3.3" />
   </component>
 </project>
