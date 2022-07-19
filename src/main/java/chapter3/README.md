@@ -93,7 +93,7 @@ public <T> List<T> filter(List<T> list, Predicate<T> p) {
 Predicate<String> nonEmptyStringPredicate = (String s) -> !s.isEmpty();
 List<String> nonEmpty = filter(listOfStrings, nonEmptyStringPredicate);
 ```
-and check [UsingPredicateInterface.java] for more examples
+and check [UsingPredicateInterface.java](./part4UsingFunctionalInterfaces/UsingPredicateInterface.java) for more examples
 
 ### Working with a Consumer:
 
@@ -109,7 +109,7 @@ public <T> void forEach(List<T> list, Consumer<T> c) {
 }
 forEach(Arrays.asList(1,2,3,4,5),(Integer i) -> System.out.println(i));
 ```
-and check [UsingConsumerInterface.java] for more examples
+and check [UsingConsumerInterface.java](./part4UsingFunctionalInterfaces/UsingConsumerInterface.java) for more examples
 
 ### Working with a Function:
 
@@ -128,7 +128,7 @@ public <T, R> List<R> map(List<T> list, Function<T, R> f) {
 // [7, 2, 6]
 List<Integer> l = map(Arrays.asList("lambdas", "in", "action"),(String s) -> s.length());
 ```
-and check [UsingFunctionInterface.java] for more examples
+and check [UsingFunctionInterface.java](./part4UsingFunctionalInterfaces/UsingFunctionInterface.java) for more examples
 
 ### Primitive specializations:
 
@@ -154,6 +154,6 @@ But this comes with a performance cost. Boxed values are a wrapper around primit
 
 
 
-[UsingPredicateInterface.java](./part4UsingFunctionalInterfaces/UsingPredicateInterface.java)
-[UsingConsumerInterface.java](./part4UsingFunctionalInterfaces/UsingConsumerInterface.java)
-[UsingFunctionInterface.java](./part4UsingFunctionalInterfaces/UsingFunctionInterface.java)
+
+
+
