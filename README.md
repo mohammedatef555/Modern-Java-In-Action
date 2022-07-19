@@ -7,4 +7,4 @@
 
 
 [Modern Java In Action]: https://learning.oreilly.com/library/view/modern-java-in/9781617293566/
-[My progress]: https://progress-bar.dev/<thepercentage>?title=<title>
+[My progress]: https://progress-bar.dev/15?title=<title>
