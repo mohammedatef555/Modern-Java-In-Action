@@ -48,7 +48,8 @@ list of valid lambdas.
 - AKA Any interface with a SAM(Single Abstract Method) is a functional interface.
 
 ```java
-// @FunctionalInterface isn’t mandatory, but it’s good practice to use it when an interface is designed for that purpose.
+// @FunctionalInterface isn’t mandatory, but it’s good practice 
+// to use it when an interface is designed for that purpose.
 @FunctionalInterface
 public interface Predicate<T> {
     boolean test(T t);
