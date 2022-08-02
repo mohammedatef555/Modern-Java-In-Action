@@ -12,6 +12,7 @@ public class UsingConsumerInterface {
     }
 
     public static void main(String[] args) {
-        forEach(Arrays.asList(1, 2, 3, 4, 5), (Integer i) -> System.out.println(i));
+//        forEach(Arrays.asList(1, 2, 3, 4, 5), (Integer i) -> System.out.println(i));
+        Consumer<String> consumer = (String s) -> s.length();
     }
 }

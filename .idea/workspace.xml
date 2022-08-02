@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3feaa8-ecac-40c7-bd4f-dac7149b1b3d" name="Changes" comment="Finish Reading 3.3">
+    <list default="true" id="2c3feaa8-ecac-40c7-bd4f-dac7149b1b3d" name="Changes" comment="Finish Reading 3.4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chapter3/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chapter3/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chapter3/part4UsingFunctionalInterfaces/UsingConsumerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chapter3/part4UsingFunctionalInterfaces/UsingConsumerInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,7 @@
       <recent name="Chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UsingFunctionInterface">
+  <component name="RunManager" selected="Application.UsingLocalVariables">
     <configuration name="LambdasIntoPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="chapter3.part3.LambdasIntoPractice" />
       <module name="Modern Java In Action" />
@@ -89,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsingPredicateInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter3.part4UsingFunctionalInterfaces.UsingPredicateInterface" />
+    <configuration name="UsingLocalVariables" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter3.part5.UsingLocalVariables" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter3.part4UsingFunctionalInterfaces.*" />
+          <option name="PATTERN" value="chapter3.part5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,11 +119,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UsingFunctionInterface" />
+        <item itemvalue="Application.UsingLocalVariables" />
         <item itemvalue="Application.UsingConsumerInterface" />
-        <item itemvalue="Application.UsingPredicateInterfaces" />
+        <item itemvalue="Application.UsingFunctionInterface" />
         <item itemvalue="Application.LambdasIntoPractice" />
-        <item itemvalue="Application.chapter3.WhereToUseAndHowToUseLambda" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658220656676</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Finish Reading 3.4">
+      <created>1658227077194</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1658227077194</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,6 +212,7 @@
     <MESSAGE value="Finish Reading Chapter2" />
     <MESSAGE value="Start Reading Chapter 3" />
     <MESSAGE value="Finish Reading 3.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish Reading 3.3" />
+    <MESSAGE value="Finish Reading 3.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish Reading 3.4" />
   </component>
 </project>

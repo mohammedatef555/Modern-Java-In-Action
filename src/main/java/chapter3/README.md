@@ -19,13 +19,13 @@ A lambda expression is composed of parameters, an arrow, and a body.
 list of valid lambdas.
 ```java
 (String s) -> s.length()
-(Apple a) -> a.getWeight() > 150
-(int x, int y) -> {
+        (Apple a) -> a.getWeight() > 150
+        (int x, int y) -> {
         System.out.println("Result:");
         System.out.println(x + y);
         }
-() -> 42
-(Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight())     
+        () -> 42
+        (Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight())     
 ```
 
 ## Examples of lambdas
@@ -81,17 +81,17 @@ process(() -> System.out.println("This is awesome!!"));
 public interface Predicate<T> {
     boolean test(T t);
 }
-public <T> List<T> filter(List<T> list, Predicate<T> p) {
-    List<T> results = new ArrayList<>();
-    for(T t: list) {
-        if(p.test(t)) {
-            results.add(t);
+    public <T> List<T> filter(List<T> list, Predicate<T> p) {
+        List<T> results = new ArrayList<>();
+        for(T t: list) {
+            if(p.test(t)) {
+                results.add(t);
+            }
         }
+        return results;
     }
-    return results;
-}
-Predicate<String> nonEmptyStringPredicate = (String s) -> !s.isEmpty();
-List<String> nonEmpty = filter(listOfStrings, nonEmptyStringPredicate);
+    Predicate<String> nonEmptyStringPredicate = (String s) -> !s.isEmpty();
+    List<String> nonEmpty = filter(listOfStrings, nonEmptyStringPredicate);
 ```
 and check [UsingPredicateInterface.java](./part4UsingFunctionalInterfaces/UsingPredicateInterface.java) for more examples
 
@@ -102,12 +102,12 @@ and check [UsingPredicateInterface.java](./part4UsingFunctionalInterfaces/UsingP
 public interface Consumer<T> {
     void accept(T t);
 }
-public <T> void forEach(List<T> list, Consumer<T> c) {
-    for(T t: list) {
-        c.accept(t);
+    public <T> void forEach(List<T> list, Consumer<T> c) {
+        for(T t: list) {
+            c.accept(t);
+        }
     }
-}
-forEach(Arrays.asList(1,2,3,4,5),(Integer i) -> System.out.println(i));
+    forEach(Arrays.asList(1,2,3,4,5),(Integer i) -> System.out.println(i));
 ```
 and check [UsingConsumerInterface.java](./part4UsingFunctionalInterfaces/UsingConsumerInterface.java) for more examples
 
@@ -118,15 +118,15 @@ and check [UsingConsumerInterface.java](./part4UsingFunctionalInterfaces/UsingCo
 public interface Function<T, R> {
     R apply(T t);
 }
-public <T, R> List<R> map(List<T> list, Function<T, R> f) {
-    List<R> result = new ArrayList<>();
-    for(T t: list) {
-        result.add(f.apply(t));
+    public <T, R> List<R> map(List<T> list, Function<T, R> f) {
+        List<R> result = new ArrayList<>();
+        for(T t: list) {
+            result.add(f.apply(t));
+        }
+        return result;
     }
-    return result;
-}
-// [7, 2, 6]
-List<Integer> l = map(Arrays.asList("lambdas", "in", "action"),(String s) -> s.length());
+    // [7, 2, 6]
+    List<Integer> l = map(Arrays.asList("lambdas", "in", "action"),(String s) -> s.length());
 ```
 and check [UsingFunctionInterface.java](./part4UsingFunctionalInterfaces/UsingFunctionInterface.java) for more examples
 
@@ -147,6 +147,73 @@ But this comes with a performance cost. Boxed values are a wrapper around primit
 |Combine two values | ``` (int a, int b) -> a * b	 ``` | ``` IntBinaryOperator ``` |
 | Compare two objects	 |``` (Apple a1, Apple a2) ->a1.getWeight().compareTo(a2.getWeight()) ```  | ``` Comparator<Apple> ``` |
 
+#  3.5. Type checking, type inference, and restrictions
+
+## Type checking:
+The type of a lambda is deduced from the context in which the lambda is used. The type expected for the lambda expression inside the context (for example, a method parameter that it’s passed to or a local variable that it’s assigned to) is called the target- type. Let’s look at an example to see what happens behind the scenes when you use a lambda expression.
+
+```java
+List<Apple> heavierThan150g = filter(inventory, (Apple apple) -> apple.getWeight() > 150);
+```
+The type-checking process is deconstructed as follows:
+- First, you look up the declaration of the filter method.
+- Second, it expects, as the second formal parameter, an object of type Predicate<Apple> (the target type).
+- Third, Predicate<Apple> is a functional interface defining a single abstract method called test.
+- Fourth, the test method describes a function descriptor that accepts an Apple and returns a boolean.
+- Finally, any argument to the filter method needs to match this requirement.
+
+The code is valid because the lambda expression that we’re passing also takes an Apple as parameter and returns a boolean. Note that if the lambda expression was throwing an exception, then the declared throws clause of the abstract method would also have to match.
+
+### Same lambda, different functional interfaces:
+Because of the idea of target typing, the same lambda expression can be associated with different functional interfaces if they have a compatible abstract method signature.
+
+```java
+Callable<Integer> c = () -> 42;
+PrivilegedAction<Integer> p = () -> 42;
+```
+
+```java
+Comparator<Apple> c1 =
+  (Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight());
+ToIntBiFunction<Apple, Apple> c2 =
+  (Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight());
+BiFunction<Apple, Apple, Integer> c3 =
+  (Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight());
+```
+
+### Special void-compatibility rule:
+If a lambda has a statement expression as its body, it’s compatible with a function descriptor that returns void (provided the parameter list is compatible, too). For example, both of the following lines are legal even though the method add of a List returns a boolean and not void as expected in the Consumer context (T -> void):
+
+```java
+// Predicate has a boolean return
+Predicate<String> p = (String s) -> list.add(s);
+// Consumer has a void return
+Consumer<String> b = (String s) -> list.add(s);
+```
+
+## Type inference:
+You can simplify your code one step further. The Java compiler deduces what functional interface to associate with a lambda expression from its surrounding context (the target type), meaning it can also deduce an appropriate signature for the lambda because the function descriptor is available through the target type. The benefit is that the compiler has access to the types of the parameters of a lambda expression, and they can be omitted in the lambda syntax. The Java compiler infers the types of the parameters of a lambda as shown here.
+
+```java
+Comparator<Apple> c =
+  (Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight());      
+Comparator<Apple> c =
+  (a1, a2) -> a1.getWeight().compareTo(a2.getWeight());                  
+```
+Note that sometimes it’s more readable to include the types explicitly, and sometimes it’s more readable to exclude them. There’s no rule for which way is better; developers must make their own choices about what makes their code more readable.
+
+## Using local variables (capturing lambdas):
+```java
+int portNumber = 1337;
+Runnable r = () -> System.out.println(portNumber);
+```
+There are some restrictions on what you can do with these variables. Lambdas are allowed to capture (to reference in their bodies) instance variables and static variables without restrictions. But when local variables are captured, they have to be explicitly declared final or be effectively final. Lambda expressions can capture local variables that are assigned to only once. (Note: capturing an instance variable can be seen as capturing the final local variable this.) For example, the following code doesn’t compile because the variable portNumber is assigned to twice:
+```java
+int portNumber = 1337;
+Runnable r = () -> System.out.println(portNumber);         
+portNumber = 31337;
+```
+this restriction exists because local variables live on the stack and are implicitly confined to the thread they’re in. Allowing capture of mutable local variables opens new thread-unsafe possibilities, which are undesirable (instance variables are fine because they live on the heap, which is shared across threads).
 
 
 # Still Reading ... 👨🏻‍💻
