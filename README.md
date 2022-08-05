@@ -1,6 +1,6 @@
 # Reading Modern Java In Action
 
-- ![Progress](https://progress-bar.dev/15/?title=done) still reading
+- ![Progress](https://progress-bar.dev/1٦/?title=done) still reading
 - [Modern Java In Action] - you can access the book from here [Oreilly learning platfrom]
 
 
