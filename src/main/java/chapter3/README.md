@@ -24,13 +24,13 @@ A lambda expression is composed of parameters, an arrow, and a body.
 list of valid lambdas.
 ```java
 (String s) -> s.length()
-        (Apple a) -> a.getWeight() > 150
-        (int x, int y) -> {
+(Apple a) -> a.getWeight() > 150
+(int x, int y) -> {
         System.out.println("Result:");
         System.out.println(x + y);
-        }
-        () -> 42
-        (Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight())     
+}
+() -> 42
+(Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight())     
 ```
 
 ## Examples of lambdas
