@@ -5,6 +5,11 @@
 
 - 3.1. Lambdas in a nutshell
 - 3.2. Where and how to use lambdas
+- 3.3. Putting lambdas into practice: the execute-around pattern (behavior parameterization)
+- 3.4. Using functional interfaces
+- 3.5. Type checking, type inference, and restrictions
+- 3.6. Method references
+
 - Still reading
 
 
