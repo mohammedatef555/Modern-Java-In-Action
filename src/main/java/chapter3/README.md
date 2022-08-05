@@ -81,17 +81,17 @@ process(() -> System.out.println("This is awesome!!"));
 public interface Predicate<T> {
     boolean test(T t);
 }
-    public <T> List<T> filter(List<T> list, Predicate<T> p) {
-        List<T> results = new ArrayList<>();
-        for(T t: list) {
-            if(p.test(t)) {
-                results.add(t);
-            }
+public <T> List<T> filter(List<T> list, Predicate<T> p) {
+    List<T> results = new ArrayList<>();
+    for(T t: list) {
+        if(p.test(t)) {
+            results.add(t);
         }
-        return results;
     }
-    Predicate<String> nonEmptyStringPredicate = (String s) -> !s.isEmpty();
-    List<String> nonEmpty = filter(listOfStrings, nonEmptyStringPredicate);
+    return results;
+}
+Predicate<String> nonEmptyStringPredicate = (String s) -> !s.isEmpty();
+List<String> nonEmpty = filter(listOfStrings, nonEmptyStringPredicate);
 ```
 and check [UsingPredicateInterface.java](./part4UsingFunctionalInterfaces/UsingPredicateInterface.java) for more examples
 
@@ -102,12 +102,12 @@ and check [UsingPredicateInterface.java](./part4UsingFunctionalInterfaces/UsingP
 public interface Consumer<T> {
     void accept(T t);
 }
-    public <T> void forEach(List<T> list, Consumer<T> c) {
-        for(T t: list) {
-            c.accept(t);
-        }
+public <T> void forEach(List<T> list, Consumer<T> c) {
+    for(T t: list) {
+        c.accept(t);
     }
-    forEach(Arrays.asList(1,2,3,4,5),(Integer i) -> System.out.println(i));
+}
+forEach(Arrays.asList(1,2,3,4,5),(Integer i) -> System.out.println(i));
 ```
 and check [UsingConsumerInterface.java](./part4UsingFunctionalInterfaces/UsingConsumerInterface.java) for more examples
 
@@ -118,15 +118,15 @@ and check [UsingConsumerInterface.java](./part4UsingFunctionalInterfaces/UsingCo
 public interface Function<T, R> {
     R apply(T t);
 }
-    public <T, R> List<R> map(List<T> list, Function<T, R> f) {
-        List<R> result = new ArrayList<>();
-        for(T t: list) {
-            result.add(f.apply(t));
-        }
-        return result;
+public <T, R> List<R> map(List<T> list, Function<T, R> f) {
+    List<R> result = new ArrayList<>();
+    for(T t: list) {
+        result.add(f.apply(t));
     }
-    // [7, 2, 6]
-    List<Integer> l = map(Arrays.asList("lambdas", "in", "action"),(String s) -> s.length());
+    return result;
+}
+// [7, 2, 6]
+List<Integer> l = map(Arrays.asList("lambdas", "in", "action"),(String s) -> s.length());
 ```
 and check [UsingFunctionInterface.java](./part4UsingFunctionalInterfaces/UsingFunctionInterface.java) for more examples
 
@@ -215,6 +215,77 @@ portNumber = 31337;
 ```
 this restriction exists because local variables live on the stack and are implicitly confined to the thread they’re in. Allowing capture of mutable local variables opens new thread-unsafe possibilities, which are undesirable (instance variables are fine because they live on the heap, which is shared across threads).
 
+# 3.6. Method references
+Method references can be seen as shorthand for lambdas calling only a specific method.
+Method reference is used to refer method of functional interface.
+A method reference lets you create a lambda expression from an existing method implementation.
+The target reference is placed before the delimiter :: and the name of the method is provided after it. For example, ```Apple::getWeight``` is a method reference to the method getWeight defined in the Apple class. (Remember that no brackets are needed after getWeight because you’re not calling it at the moment, you’re merely quoting its name.) This method reference is shorthand for the lambda expression:
+```(Apple apple) -> apple.getWeight()```
+
+## Recipes for constructing method references for three different types of lambda expressions:
+
+### A method reference to a static method:
+
+Lambda  | `(args) -> ClassName.staticMethod(args)`
+------------- | -------------
+Method Reference  | `ClassName::staticMethod`
+
+### A method reference to an instance method of an arbitrary type:
+
+Lambda  | `(arg0, rest) -> arg0.instanceMethod(rest)`
+------------- | -------------
+Method Reference  | `ClassName::instanceMethod`, Note: arg0 is of type ClassName.
+
+### A method reference to an instance method of an existing object or expression:
+
+Lambda  | `(args) -> expr.instanceMethod(args)`
+------------- | -------------
+Method Reference  | `expr::instanceMethod`
+
+## Constructor references:
+You can create a reference to an existing constructor using its name and the keyword new as follows: ClassName::new. It works similarly to a reference to a static method. For example, suppose there’s a zero-argument constructor. This fits the signature () -> Apple of Supplier; you can do the following:
+```java
+Supplier<Apple> c1 = Apple::new; // Constructor reference to the default Apple() constructor  
+Apple a1 = c1.get(); // Calling Supplier’s get method produces a new Apple.   
+```
+This is equivalent to:
+```java
+Supplier<Apple> c1 = () -> new Apple(); // Lambda expression to create an Apple using the default constructor
+Apple a1 = c1.get(); // Calling Supplier’s get method produces a new Apple.
+```
+If you have One-Argument Constructor:
+```java
+Function<Integer, Apple> c2 = Apple::new; // Constructor reference to Apple (Integer weight) for example
+Apple a2 = c2.apply(110); // Calling Function’s apply method with a given weight produces an Apple.
+```
+this is equivalent to:
+```java 
+Function<Integer, Apple> c2 = (weight) -> new Apple(weight);    
+Apple a2 = c2.apply(110);   
+```
+
+What if the constructor have 2 parametes like Apple(Integer weight, Color color)? well you can use BiFunction, BiFunction<T, U, R>
+The function descriptor of the BiFunction is `(T t, U u) -> R`
+```java
+BiFunction<Integer, Color, Apple> c3 = Apple::new;      
+Apple a3 = c3.apply(110, Color.GREEN);
+// OR you can use lambda
+BiFunction<Integer, Color, Apple> c3 = (color, weight) -> new Apple(color, weight);    
+Apple a3 = c3.apply(110, Color.GREEN);
+```
+
+You saw how to transform zero-, one-, and two-argument constructors into constructor references. What would you need to do in order to use a constructor reference for a three-argument constructor such as RGB(int, int, int)?
+You saw that the syntax for a constructor reference is ClassName::new, so in this case it’s RGB::new. But you need a functional interface that will match the signature of that constructor reference. Because there isn’t one in the functional interface starter set, you can create your own:
+```java
+@FunctionalInterface
+public interface TriFunction<T, U, V, R> {
+    R apply(T t, U u, V v);
+}
+```
+```java
+TriFunction<Integer, Color, Integer, Apple> c3 = Apple::new;
+c3.apply(2,Color.GREEN, 120);
+```
 
 # Still Reading ... 👨🏻‍💻
 

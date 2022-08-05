@@ -7,6 +7,10 @@ public class Apple {
     private Color color;
     private int weight;
 
+    public Apple() {
+
+    }
+
     public Apple(int id, Color color) {
         this.id = id;
         this.color = color;
