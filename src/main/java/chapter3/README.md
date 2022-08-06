@@ -10,7 +10,6 @@
 - 3.5. Type checking, type inference, and restrictions
 - 3.6. Method references
 
-- Still reading
 
 
 ## Lambda Syntax
