@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3feaa8-ecac-40c7-bd4f-dac7149b1b3d" name="Changes" comment="Finish Reading 3.5">
+    <list default="true" id="2c3feaa8-ecac-40c7-bd4f-dac7149b1b3d" name="Changes" comment="Finish Reading 3.6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Chapter2/Apple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chapter2/Apple.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,13 +49,13 @@
       <recent name="Chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MethodReference">
-    <configuration name="LambdasIntoPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter3.part3.LambdasIntoPractice" />
+  <component name="RunManager" selected="Application.TerminalOperations">
+    <configuration name="ExternalIteration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter4.part3.ExternalIteration" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter3.part3.*" />
+          <option name="PATTERN" value="Chapter4.part3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -64,12 +63,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MethodReference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter3.part6.MethodReference" />
+    <configuration name="IntermediateOperations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter4.part4.IntermediateOperations" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter3.part6.*" />
+          <option name="PATTERN" value="Chapter4.part4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +76,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsingConsumerInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter3.part4UsingFunctionalInterfaces.UsingConsumerInterface" />
+    <configuration name="InternalIteration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter4.part3.InternalIteration" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter3.part4UsingFunctionalInterfaces.*" />
+          <option name="PATTERN" value="Chapter4.part3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsingFunctionInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter3.part4UsingFunctionalInterfaces.UsingFunctionInterface" />
+    <configuration name="StreamOperations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter4.part4.StreamOperations" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter3.part4UsingFunctionalInterfaces.*" />
+          <option name="PATTERN" value="Chapter4.part4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsingLocalVariables" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter3.part5.UsingLocalVariables" />
+    <configuration name="TerminalOperations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter4.part4.TerminalOperations" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter3.part5.*" />
+          <option name="PATTERN" value="Chapter4.part4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MethodReference" />
-        <item itemvalue="Application.UsingLocalVariables" />
-        <item itemvalue="Application.UsingConsumerInterface" />
-        <item itemvalue="Application.UsingFunctionInterface" />
-        <item itemvalue="Application.LambdasIntoPractice" />
+        <item itemvalue="Application.TerminalOperations" />
+        <item itemvalue="Application.IntermediateOperations" />
+        <item itemvalue="Application.StreamOperations" />
+        <item itemvalue="Application.InternalIteration" />
+        <item itemvalue="Application.ExternalIteration" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659462935595</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Finish Reading 3.6">
+      <created>1659721358458</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1659721358458</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,6 +227,7 @@
     <MESSAGE value="Finish Reading 3.3" />
     <MESSAGE value="Finish Reading 3.4" />
     <MESSAGE value="Finish Reading 3.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish Reading 3.5" />
+    <MESSAGE value="Finish Reading 3.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish Reading 3.6" />
   </component>
 </project>
