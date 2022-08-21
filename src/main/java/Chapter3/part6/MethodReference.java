@@ -1,6 +1,4 @@
-package chapter3.part6;
-
-import Chapter2.Apple;
+package Chapter3.part6;
 
 import java.util.List;
 import java.util.function.BiPredicate;

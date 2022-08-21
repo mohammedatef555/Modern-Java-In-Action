@@ -1,4 +1,4 @@
-package chapter3.part3;
+package Chapter3.part3;
 
 public class LambdasIntoPractice {
     public static String greetThisPerson(Greeting greeting, String name) {

@@ -1,4 +1,4 @@
-package chapter3.part5;
+package Chapter3.part5;
 
 public class UsingLocalVariables {
     public static void main(String[] args) {

@@ -1,6 +1,5 @@
-package chapter3.part4UsingFunctionalInterfaces;
+package Chapter3.part4UsingFunctionalInterfaces;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 

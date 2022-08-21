@@ -1,4 +1,4 @@
-package chapter3.part3;
+package Chapter3.part3;
 
 @FunctionalInterface
 public interface Greeting {

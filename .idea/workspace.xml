@@ -4,8 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3feaa8-ecac-40c7-bd4f-dac7149b1b3d" name="Changes" comment="Finish Reading 3.6">
+    <list default="true" id="2c3feaa8-ecac-40c7-bd4f-dac7149b1b3d" name="Changes" comment="Finish Reading Chapter 4: Intro to Streams">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chapter3/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chapter3/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chapter3/part1AndPart2/Adder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chapter3/part1AndPart2/Adder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chapter3/part1AndPart2/WhereToUseAndHowToUseLambda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chapter3/part1AndPart2/WhereToUseAndHowToUseLambda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chapter3/part3/Greeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chapter3/part3/Greeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chapter3/part3/LambdasIntoPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chapter3/part3/LambdasIntoPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chapter3/part4UsingFunctionalInterfaces/UsingConsumerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chapter3/part4UsingFunctionalInterfaces/UsingConsumerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chapter3/part4UsingFunctionalInterfaces/UsingFunctionInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chapter3/part4UsingFunctionalInterfaces/UsingFunctionInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chapter3/part4UsingFunctionalInterfaces/UsingPredicateInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chapter3/part4UsingFunctionalInterfaces/UsingPredicateInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chapter3/part5/TypeChecking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chapter3/part5/TypeChecking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chapter3/part5/TypeInference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chapter3/part5/TypeInference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chapter3/part5/UsingLocalVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chapter3/part5/UsingLocalVariables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chapter3/part6/ConstructorReferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chapter3/part6/ConstructorReferences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chapter3/part6/MethodReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chapter3/part6/MethodReference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chapter3/part6/TriFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chapter3/part6/TriFunction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,13 +63,13 @@
       <recent name="Chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TerminalOperations">
-    <configuration name="ExternalIteration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter4.part3.ExternalIteration" />
+  <component name="RunManager" selected="Application.Quiz5dot2AnswerTwo">
+    <configuration name="ApplyingAFunctionToEachElementOfAStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter5.part3_Mapping.ApplyingAFunctionToEachElementOfAStream" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter4.part3.*" />
+          <option name="PATTERN" value="Chapter5.part3_Mapping.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -63,12 +77,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntermediateOperations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter4.part4.IntermediateOperations" />
+    <configuration name="FlatteningStreams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter5.part3_Mapping.FlatteningStreams" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter4.part4.*" />
+          <option name="PATTERN" value="Chapter5.part3_Mapping.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InternalIteration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter4.part3.InternalIteration" />
+    <configuration name="Quiz5dot1Answer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter5.part2_SlicingAStream.Quiz5dot1Answer" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter4.part3.*" />
+          <option name="PATTERN" value="Chapter5.part2_SlicingAStream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamOperations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter4.part4.StreamOperations" />
+    <configuration name="Quiz5dot2Answer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter5.part3_Mapping.Quiz5dot2Answer" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter4.part4.*" />
+          <option name="PATTERN" value="Chapter5.part3_Mapping.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TerminalOperations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter4.part4.TerminalOperations" />
+    <configuration name="Quiz5dot2AnswerTwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter5.part3_Mapping.Quiz5dot2AnswerTwo" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter4.part4.*" />
+          <option name="PATTERN" value="Chapter5.part3_Mapping.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TerminalOperations" />
-        <item itemvalue="Application.IntermediateOperations" />
-        <item itemvalue="Application.StreamOperations" />
-        <item itemvalue="Application.InternalIteration" />
-        <item itemvalue="Application.ExternalIteration" />
+        <item itemvalue="Application.Quiz5dot2AnswerTwo" />
+        <item itemvalue="Application.Quiz5dot2Answer" />
+        <item itemvalue="Application.FlatteningStreams" />
+        <item itemvalue="Application.ApplyingAFunctionToEachElementOfAStream" />
+        <item itemvalue="Application.Quiz5dot1Answer" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659721358458</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Finish Reading Chapter 4: Intro to Streams">
+      <created>1661025950059</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1661025950059</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,6 +249,7 @@
     <MESSAGE value="Finish Reading 3.4" />
     <MESSAGE value="Finish Reading 3.5" />
     <MESSAGE value="Finish Reading 3.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish Reading 3.6" />
+    <MESSAGE value="Finish Reading Chapter 4: Intro to Streams" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish Reading Chapter 4: Intro to Streams" />
   </component>
 </project>

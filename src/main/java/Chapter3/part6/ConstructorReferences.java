@@ -1,4 +1,4 @@
-package chapter3.part6;
+package Chapter3.part6;
 
 import Chapter2.Apple;
 import Chapter2.Color;

@@ -1,4 +1,4 @@
-package chapter3.part4UsingFunctionalInterfaces;
+package Chapter3.part4UsingFunctionalInterfaces;
 
 import java.util.ArrayList;
 import java.util.Arrays;
