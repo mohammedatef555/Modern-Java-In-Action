@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3feaa8-ecac-40c7-bd4f-dac7149b1b3d" name="Changes" comment="Finish Solving 5.6 Questions">
+    <list default="true" id="2c3feaa8-ecac-40c7-bd4f-dac7149b1b3d" name="Changes" comment="Finish Reading 5.7 Numeric Streams">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +50,7 @@
       <recent name="Chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NumericRanges">
+  <component name="RunManager" selected="Application.FibonacciTuplesSeriesUsingStreams">
     <configuration name="Chapter5.part7.ConvertingBackToAStreamOfObjects" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Chapter5.part7.ConvertingBackToAStreamOfObjects" />
       <module name="Modern Java In Action" />
@@ -64,12 +64,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Chapter5.part7.MappingToANumericStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter5.part7.MappingToANumericStream" />
+    <configuration name="FibonacciTuplesSeriesUsingStreams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter5.part8.FibonacciTuplesSeriesUsingStreams" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter5.part7.*" />
+          <option name="PATTERN" value="Chapter5.part8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InfiniteStreams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter5.part8.InfiniteStreams" />
+      <module name="Modern Java In Action" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Chapter5.part8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,26 +116,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuestionEight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter5.part6.myAnswers.QuestionEight" />
-      <module name="Modern Java In Action" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Chapter5.part6.myAnswers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FibonacciTuplesSeriesUsingStreams" />
+        <item itemvalue="Application.InfiniteStreams" />
         <item itemvalue="Application.NumericRanges" />
         <item itemvalue="Application.OptionalWithPrimtives" />
         <item itemvalue="Application.Chapter5.part7.ConvertingBackToAStreamOfObjects" />
-        <item itemvalue="Application.Chapter5.part7.MappingToANumericStream" />
-        <item itemvalue="Application.QuestionEight" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661266505949</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Finish Reading 5.7 Numeric Streams">
+      <created>1661268534415</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1661268534415</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -275,7 +282,8 @@
     <MESSAGE value="Finish Reading 5.3: Mapping" />
     <MESSAGE value="Finish Reading 5.6: Reducing" />
     <MESSAGE value="Finish Solving 5.6 Questions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish Solving 5.6 Questions" />
+    <MESSAGE value="Finish Reading 5.7 Numeric Streams" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish Reading 5.7 Numeric Streams" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
