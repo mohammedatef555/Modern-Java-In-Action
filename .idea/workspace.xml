@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3feaa8-ecac-40c7-bd4f-dac7149b1b3d" name="Changes" comment="Finish Reading 5.3: Mapping">
+    <list default="true" id="2c3feaa8-ecac-40c7-bd4f-dac7149b1b3d" name="Changes" comment="Finish Reading 5.6: Reducing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Chapter5/part3_Mapping/FlatteningStreams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chapter5/part3_Mapping/FlatteningStreams.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,27 +35,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Quiz5dot3Answer">
-    <configuration name="FindingAnElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter5.part4_FindingAndMatching.FindingAnElement" />
+  <component name="RunManager" selected="Application.QuestionEight">
+    <configuration name="QuestionEight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter5.part6.myAnswers.QuestionEight" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter5.part4_FindingAndMatching.*" />
+          <option name="PATTERN" value="Chapter5.part6.myAnswers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -64,12 +64,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindingTheFirstElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter5.part4_FindingAndMatching.FindingTheFirstElement" />
+    <configuration name="QuestionFive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter5.part6.myAnswers.QuestionFive" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter5.part4_FindingAndMatching.*" />
+          <option name="PATTERN" value="Chapter5.part6.myAnswers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +77,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaximumAndMinimum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter5.part5_Reducing.MaximumAndMinimum" />
+    <configuration name="QuestionFour" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter5.part6.myAnswers.QuestionFour" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter5.part5_Reducing.*" />
+          <option name="PATTERN" value="Chapter5.part6.myAnswers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Quiz5dot3Answer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter5.part5_Reducing.Quiz5dot3Answer" />
+    <configuration name="QuestionSeven" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter5.part6.myAnswers.QuestionSeven" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter5.part5_Reducing.*" />
+          <option name="PATTERN" value="Chapter5.part6.myAnswers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsingReduce" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter5.part5_Reducing.UsingReduce" />
+    <configuration name="QuestionSix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter5.part6.myAnswers.QuestionSix" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter5.part5_Reducing.*" />
+          <option name="PATTERN" value="Chapter5.part6.myAnswers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Quiz5dot3Answer" />
-        <item itemvalue="Application.MaximumAndMinimum" />
-        <item itemvalue="Application.UsingReduce" />
-        <item itemvalue="Application.FindingTheFirstElement" />
-        <item itemvalue="Application.FindingAnElement" />
+        <item itemvalue="Application.QuestionEight" />
+        <item itemvalue="Application.QuestionSeven" />
+        <item itemvalue="Application.QuestionSix" />
+        <item itemvalue="Application.QuestionFive" />
+        <item itemvalue="Application.QuestionFour" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +219,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661108601592</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Finish Reading 5.6: Reducing">
+      <created>1661162781848</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1661162781848</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Finish Reading 5.6: Reducing">
+      <created>1661162848129</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1661162848129</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,7 +259,8 @@
     <MESSAGE value="Finish Reading 3.6" />
     <MESSAGE value="Finish Reading Chapter 4: Intro to Streams" />
     <MESSAGE value="Finish Reading 5.3: Mapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish Reading 5.3: Mapping" />
+    <MESSAGE value="Finish Reading 5.6: Reducing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish Reading 5.6: Reducing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
