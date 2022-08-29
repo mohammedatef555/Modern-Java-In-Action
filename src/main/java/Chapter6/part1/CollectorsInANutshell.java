@@ -26,5 +26,10 @@ public class CollectorsInANutshell {
 
         System.out.println(menu);
         System.out.println(dishes);
+        //collectors (the parameters to the stream method collect) are typically used in cases
+        // where it’s necessary to reorganize the stream’s items into a collection. But more generally,
+        // they can be used every time you want to combine all the items in the stream into a single result.
+        // This result can be of any type, as complex as a multilevel map representing a tree or as simple
+        // as a single integer, perhaps representing the sum of all the calories in the menu.
     }
 }
