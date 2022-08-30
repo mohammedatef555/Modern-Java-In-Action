@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c3feaa8-ecac-40c7-bd4f-dac7149b1b3d" name="Changes" comment="Finish Reading 6.2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Chapter6/part2/CountingCollectorUsingGeneralReducing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Chapter6/part2/GeneralizedSummarizationWithReduction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Chapter6/part2/JoiningStrings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Chapter6/part2/MaxByCollector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Chapter6/part2/ReduceVsCollectorReduce.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Chapter6/part2/ReducingAndSummarizing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Chapter6/part2/Summarization.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Chapter4/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chapter4/Dish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Chapter6/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Chapter6/part1/CollectorsInANutshell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chapter6/part1/CollectorsInANutshell.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +50,7 @@
       <recent name="Chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CountingCollectorUsingGeneralReducing">
+  <component name="RunManager" selected="Application.ManipulatingGroupedElements">
     <configuration name="CountingCollectorUsingGeneralReducing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Chapter6.part2.CountingCollectorUsingGeneralReducing" />
       <module name="Modern Java In Action" />
@@ -74,12 +64,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GeneralizedSummarizationWithReduction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter6.part2.GeneralizedSummarizationWithReduction" />
+    <configuration name="ManipulatingGroupedElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter6.part3.ManipulatingGroupedElements" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter6.part2.*" />
+          <option name="PATTERN" value="Chapter6.part3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,12 +77,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JoiningStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter6.part2.JoiningStrings" />
+    <configuration name="MoreComplexGrouping" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter6.part3.MoreComplexGrouping" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter6.part2.*" />
+          <option name="PATTERN" value="Chapter6.part3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReduceVsCollectorReduce" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter6.part2.ReduceVsCollectorReduce" />
+    <configuration name="SimpleGrouping" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter6.part3.SimpleGrouping" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter6.part2.*" />
+          <option name="PATTERN" value="Chapter6.part3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,8 +103,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Summarization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter6.part2.Summarization" />
+    <configuration name="swqwq" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter6.part2.swqwq" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
@@ -128,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ManipulatingGroupedElements" />
+        <item itemvalue="Application.MoreComplexGrouping" />
+        <item itemvalue="Application.SimpleGrouping" />
+        <item itemvalue="Application.swqwq" />
         <item itemvalue="Application.CountingCollectorUsingGeneralReducing" />
-        <item itemvalue="Application.ReduceVsCollectorReduce" />
-        <item itemvalue="Application.GeneralizedSummarizationWithReduction" />
-        <item itemvalue="Application.JoiningStrings" />
-        <item itemvalue="Application.Summarization" />
       </list>
     </recent_temporary>
   </component>
@@ -292,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661676830333</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Finish Reading 6.2">
+      <created>1661796818997</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1661796818997</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
