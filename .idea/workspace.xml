@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3feaa8-ecac-40c7-bd4f-dac7149b1b3d" name="Changes" comment="Finish Reading 6.3">
+    <list default="true" id="2c3feaa8-ecac-40c7-bd4f-dac7149b1b3d" name="Changes" comment="Finish Reading 6.4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Chapter6/part4/Partitioning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chapter6/part4/Partitioning.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
       <recent name="Chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Partitioning">
+  <component name="RunManager" selected="Application.UsingToListCollector">
     <configuration name="ManipulatingGroupedElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Chapter6.part3.ManipulatingGroupedElements" />
       <module name="Modern Java In Action" />
@@ -103,12 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="swqwq" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter6.part2.swqwq" />
+    <configuration name="UsingToListCollector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter6.part5.UsingToListCollector" />
       <module name="Modern Java In Action" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter6.part2.*" />
+          <option name="PATTERN" value="Chapter6.part5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UsingToListCollector" />
         <item itemvalue="Application.Partitioning" />
         <item itemvalue="Application.ManipulatingGroupedElements" />
         <item itemvalue="Application.MoreComplexGrouping" />
         <item itemvalue="Application.SimpleGrouping" />
-        <item itemvalue="Application.swqwq" />
       </list>
     </recent_temporary>
   </component>
@@ -296,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661888247375</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Finish Reading 6.4">
+      <created>1661962670911</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1661962670911</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -329,7 +337,8 @@
     <MESSAGE value="Rereading chapter6" />
     <MESSAGE value="Finish Reading 6.2" />
     <MESSAGE value="Finish Reading 6.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish Reading 6.3" />
+    <MESSAGE value="Finish Reading 6.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish Reading 6.4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
